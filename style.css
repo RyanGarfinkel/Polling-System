@@ -1,0 +1,141 @@
+body
+{   
+    background: linear-gradient(135deg, #0575E6, #021B79);
+    background-repeat: no-repeat;
+
+    align-items: center;
+
+    height: 88vh;
+}
+
+.main
+{
+    /* Position of container */
+    position: relative;
+
+    width: 40%;
+    height: 90%;
+
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-right: 30%;
+
+    /* Border and background */
+    border-radius: 10%;
+    background-color: rgba(255, 253, 228, .35);
+
+    text-align: center;
+}
+
+.main::before
+{
+    content: '';
+    position: absolute;
+
+    transform: rotate(-6deg);
+    border-radius: 10%;
+    background-color:rgba(255, 253, 228, .15);
+    
+    z-index: -1;
+    inset: 0;
+}
+
+#header
+{
+    padding-top: 5%;
+
+    /* Font and color */
+    font-family: "Teko";
+    font-size: 9vh;
+    color: rgb(255, 253, 228);
+}
+
+#header i
+{
+    font-size: 7vh;
+}
+
+.home button, #join-info button
+{
+    /* Text */
+    font-family: "Teko";
+    font-size: 7vh;
+    color: rgb(255, 253, 228);
+    text-decoration: underline 1vh rgba(255, 253, 228, 0);
+    transition: text-decoration-color 1s;
+
+    /* Position */
+    margin-top: 7%;
+    transform: translateY(-65%);
+
+    /* Size */
+    height: 13vh;
+    width: 40vh;
+
+    /* Background */
+    background: none;
+
+    /* Border Style */
+    border-radius: 20vh;
+    border-color: rgb(5, 117, 230);
+    border-width: 0.75vh;
+}
+
+.home button:hover, #join-info button:hover
+{
+    text-decoration-color: rgba(255, 253, 228, 1);
+}
+
+#join-info fieldset
+{
+    /* Border */
+    border-radius: 20vh;
+    border-color: rgb(5, 117, 230);
+    border-width: 0.75vh;
+    padding: 0;
+
+    /* Legend */
+    font-family: "Teko";
+    font-size: 5vh;
+    color: rgb(255, 253, 228);
+
+    /* Size */
+    height: 13vh;
+    width: 40%;
+
+    /* Position */
+    margin-left: 30%;
+    transform: translateY(-35%);
+}
+
+#join-info button
+{
+    font-size: 4vh;
+
+    width: 20vh;
+    height: 11vh;
+
+    margin-left: 5%;
+}
+
+#join-info fieldset input
+{
+    /* Border & Background */
+    border-radius: 20vh;
+    border-width: 0vh;
+    background-color: rgba(0,0,0,0);
+    
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    /* Position */
+    transform: translateY(-2.5vh);
+
+    /* Text */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Teko";
+    font-size: 4vh;
+}
